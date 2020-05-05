@@ -32,6 +32,7 @@ For the skull-stripping, we use ``afni_wf`` from ``niworkflows.anat.skullstrip``
 
 
 """
+import os.path as op
 from .. import config
 from nipype.pipeline import engine as pe
 from nipype.interfaces import io as nio
@@ -44,8 +45,13 @@ from ..interfaces import (StructuralQC, ArtifactMask, ConformImage,
 from ..interfaces.reports import AddProvenance
 from .utils import get_fwhmx
 
+###############MAKE CHANGES HERE#############################################
+moddir = '/home/kilimanjaro2/Research/monkeyStuff/secondN4/'            #####
+templatedir = '/home/kilimanjaro2/Research/monkeyStuff/templates/'      #####
+#############################################################################
 
-def anat_qc_workflow(name='anatMRIQC'):
+
+def anat_qc_workflow(dataset, name='anatMRIQC'):
     """
     One-subject-one-session-one-run pipeline to extract the NR-IQMs from
     anatomical images
@@ -59,10 +65,13 @@ def anat_qc_workflow(name='anatMRIQC'):
             wf = anat_qc_workflow()
 
     """
-    from niworkflows.anat.skullstrip import afni_wf as skullstrip_wf
+    #from niworkflows.anat.skullstrip import afni_wf as skullstrip_wf
 
-    dataset = config.workflow.inputs.get("T1w", []) \
-        + config.workflow.inputs.get("T2w", [])
+    #dataset = config.workflow.inputs.get("T1w", []) \
+    #    + config.workflow.inputs.get("T2w", [])
+    
+    sub_id = str(op.basename(op.dirname(op.dirname(dataset[0]))))
+    print(sub_id)
 
     config.loggers.workflow.info(f"""\
 Building anatomical MRIQC workflow for files: {', '.join(dataset)}.""")
@@ -79,8 +88,15 @@ Building anatomical MRIQC workflow for files: {', '.join(dataset)}.""")
 
     # 1. Reorient anatomical image
     to_ras = pe.Node(ConformImage(check_dtype=False), name='conform')
+    
     # 2. Skull-stripping (afni)
-    asw = skullstrip_wf(n4_nthreads=config.nipype.omp_nthreads, unifize=False)
+    #asw = skullstrip_wf(n4_nthreads=config.nipype.omp_nthreads, unifize=False)
+    asw = pe.Node(nio.DataGrabber(outfields=['bias_corrected', 'bias_image', 'out_file', 'out_mask']),name='asw')
+    asw.inputs.base_directory = op.abspath(op.join(moddir, sub_id))
+    asw.inputs.template = '*'
+    asw.inputs.field_template = dict(bias_corrected = 'bias_corrected.nii.gz', bias_image = 'bias_image.nii.gz', out_file = 'out_file.nii.gz', out_mask = 'out_mask.nii.gz')
+    asw.inputs.sort_filelist= False
+    
     # 3. Head mask
     hmsk = headmsk_wf()
     # 4. Spatial Normalization, using ANTs
@@ -101,12 +117,12 @@ Building anatomical MRIQC workflow for files: {', '.join(dataset)}.""")
         (inputnode, iqmswf, [('in_file', 'inputnode.in_file')]),
         (inputnode, norm, [(('in_file', _get_mod), 'inputnode.modality')]),
         (inputnode, segment, [(('in_file', _get_imgtype), 'img_type')]),
-        (to_ras, asw, [('out_file', 'inputnode.in_file')]),
-        (asw, segment, [('outputnode.out_file', 'in_files')]),
-        (asw, hmsk, [('outputnode.bias_corrected', 'inputnode.in_file')]),
+        #(to_ras, asw, [('out_file', 'inputnode.in_file')]),
+        (asw, segment, [('out_file', 'in_files')]),
+        (asw, hmsk, [('bias_corrected', 'inputnode.in_file')]),
         (segment, hmsk, [('tissue_class_map', 'inputnode.in_segm')]),
-        (asw, norm, [('outputnode.bias_corrected', 'inputnode.moving_image'),
-                     ('outputnode.out_mask', 'inputnode.moving_mask')]),
+        (asw, norm, [('bias_corrected', 'inputnode.moving_image'),
+                     ('out_mask', 'inputnode.moving_mask')]),
         (norm, amw, [
             ('outputnode.inverse_composite_transform', 'inputnode.inverse_composite_transform')]),
         (norm, iqmswf, [
@@ -114,12 +130,12 @@ Building anatomical MRIQC workflow for files: {', '.join(dataset)}.""")
         (norm, repwf, ([
             ('outputnode.out_report', 'inputnode.mni_report')])),
         (to_ras, amw, [('out_file', 'inputnode.in_file')]),
-        (asw, amw, [('outputnode.out_mask', 'inputnode.in_mask')]),
+        (asw, amw, [('out_mask', 'inputnode.in_mask')]),
         (hmsk, amw, [('outputnode.out_file', 'inputnode.head_mask')]),
         (to_ras, iqmswf, [('out_file', 'inputnode.in_ras')]),
-        (asw, iqmswf, [('outputnode.bias_corrected', 'inputnode.inu_corrected'),
-                       ('outputnode.bias_image', 'inputnode.in_inu'),
-                       ('outputnode.out_mask', 'inputnode.brainmask')]),
+        (asw, iqmswf, [('bias_corrected', 'inputnode.inu_corrected'),
+                       ('bias_image', 'inputnode.in_inu'),
+                       ('out_mask', 'inputnode.brainmask')]),
         (amw, iqmswf, [('outputnode.air_mask', 'inputnode.airmask'),
                        ('outputnode.hat_mask', 'inputnode.hatmask'),
                        ('outputnode.art_mask', 'inputnode.artmask'),
@@ -128,8 +144,9 @@ Building anatomical MRIQC workflow for files: {', '.join(dataset)}.""")
                            ('partial_volume_files', 'inputnode.pvms')]),
         (hmsk, iqmswf, [('outputnode.out_file', 'inputnode.headmask')]),
         (to_ras, repwf, [('out_file', 'inputnode.in_ras')]),
-        (asw, repwf, [('outputnode.bias_corrected', 'inputnode.inu_corrected'),
-                      ('outputnode.out_mask', 'inputnode.brainmask')]),
+        (asw, repwf, [('bias_corrected', 'inputnode.inu_corrected'),
+        #              ('bias_image', 'inputnode.in_inu'),
+                      ('out_mask', 'inputnode.brainmask')]),
         (hmsk, repwf, [('outputnode.out_file', 'inputnode.headmask')]),
         (amw, repwf, [('outputnode.air_mask', 'inputnode.airmask'),
                       ('outputnode.art_mask', 'inputnode.artmask'),
@@ -157,7 +174,7 @@ Building anatomical MRIQC workflow for files: {', '.join(dataset)}.""")
     return workflow
 
 
-def spatial_normalization(name='SpatialNormalization', resolution=2):
+def spatial_normalization(name='SpatialNormalization', resolution=1):
     """Create a simplied workflow to perform fast spatial normalization."""
     from niworkflows.interfaces.registration import (
         RobustMNINormalizationRPT as RobustMNINormalization
@@ -185,8 +202,7 @@ def spatial_normalization(name='SpatialNormalization', resolution=2):
         # Request all MultiProc processes when ants_nthreads > n_procs
         num_threads=config.nipype.omp_nthreads,
         mem_gb=3)
-    norm.inputs.reference_mask = str(
-        get_template(tpl_id, resolution=resolution, desc='brain', suffix='mask'))
+    norm.inputs.reference_mask = str(templatedir + 'NMT_brain_mask.nii.gz')
 
     workflow.connect([
         (inputnode, norm, [('moving_image', 'moving_image'),
@@ -249,9 +265,9 @@ def compute_iqms(name='ComputeIQMs'):
         dimension=3, default_value=0, interpolation='Linear',
         float=True),
         iterfield=['input_image'], name='MNItpms2t1')
-    invt.inputs.input_image = [str(p) for p in get_template(
-        config.workflow.template_id, suffix='probseg', resolution=1,
-        label=['CSF', 'GM', 'WM'])]
+    invt.inputs.input_image = [str(templatedir + 'NMT_segmentation_CSF.nii.gz'),
+        str(templatedir + 'NMT_segmentation_GM.nii.gz'),
+        str(templatedir + 'NMT_segmentation_WM.nii.gz')]
 
     datasink = pe.Node(IQMFileSink(
         out_dir=config.execution.output_dir,
@@ -319,14 +335,14 @@ def individual_reports(name='ReportsWorkflow'):
     from ..interfaces import PlotMosaic
     from ..interfaces.reports import IndividualReport
 
-    verbose = config.execution.verbose_reports
+    verbose = True 
     pages = 2
     extra_pages = int(verbose) * 7
 
     workflow = pe.Workflow(name=name)
     inputnode = pe.Node(niu.IdentityInterface(fields=[
         'in_ras', 'brainmask', 'headmask', 'airmask', 'artmask', 'rotmask',
-        'segmentation', 'inu_corrected', 'noisefit', 'in_iqms',
+        'segmentation', 'inu_corrected', 'noisefit', 'in_iqms', 'in_inu',
         'mni_report', 'api_id']),
         name='inputnode')
 
@@ -379,6 +395,9 @@ def individual_reports(name='ReportsWorkflow'):
     plot_artmask = pe.Node(PlotContours(
         display_mode='z', levels=[.5], colors=['r'], cut_coords=10,
         out_file='artmask', saturate=True), name='PlotArtmask')
+    #plot_inu = pe.Node(PlotContours(
+    #    display_mode='z', levels=[.5], colors=['r'], cut_coords=10,
+    #    out_file='out_inu', saturate=True), name='PlotINU')
 
     workflow.connect([
         (inputnode, plot_segm, [('in_ras', 'in_file'),
@@ -391,6 +410,8 @@ def individual_reports(name='ReportsWorkflow'):
                                    ('airmask', 'in_contours')]),
         (inputnode, plot_artmask, [('in_ras', 'in_file'),
                                    ('artmask', 'in_contours')]),
+        #(inputnode, plot_inu, [('in_ras', 'in_file'),
+        #                           ('in_inu', 'in_contours')]),
         (inputnode, mplots, [('mni_report', f"in{pages + 1}")]),
         (plot_bmask, mplots, [('out_file', f'in{pages + 2}')]),
         (plot_segm, mplots, [('out_file', f'in{pages + 3}')]),
@@ -398,6 +419,7 @@ def individual_reports(name='ReportsWorkflow'):
         (plot_headmask, mplots, [('out_file', f'in{pages + 5}')]),
         (plot_airmask, mplots, [('out_file', f'in{pages + 6}')]),
         (inputnode, mplots, [('noisefit', f'in{pages + 7}')]),
+        #(plot_inu, mplots, [('out_file', f'in{pages + 8}')]),
     ])
     return workflow
 
@@ -415,8 +437,9 @@ def headmsk_wf(name='HeadMaskWorkflow'):
 
     """
 
-    use_bet = config.workflow.headmask.upper() == "BET"
-    has_dipy = False
+    #use_bet = config.workflow.headmask.upper() == "BET"
+    use_bet = False 
+    has_dipy = True
 
     if not use_bet:
         try:
@@ -497,8 +520,7 @@ def airmsk_wf(name='AirMaskWorkflow'):
     invt = pe.Node(ants.ApplyTransforms(
         dimension=3, default_value=0, interpolation='MultiLabel', float=True),
         name='invert_xfm')
-    invt.inputs.input_image = str(get_template(
-        'MNI152NLin2009cAsym', resolution=1, desc='head', suffix='mask'))
+    invt.inputs.input_image = str(templatedir + 'head_mask_template.nii.gz')
 
     qi1 = pe.Node(ArtifactMask(), name='ArtifactMask')
 
