@@ -203,6 +203,7 @@ def spatial_normalization(name='SpatialNormalization', resolution=1):
         num_threads=config.nipype.omp_nthreads,
         mem_gb=3)
     norm.inputs.reference_mask = str(templatedir + 'NMT_brain_mask.nii.gz')
+    norm.inputs.reference_image = str(templatedir + 'NMT_brain_template.nii.gz')
 
     workflow.connect([
         (inputnode, norm, [('moving_image', 'moving_image'),
