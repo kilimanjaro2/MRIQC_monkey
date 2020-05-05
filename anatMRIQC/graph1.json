@@ -380,188 +380,188 @@
         {
             "group": 1,
             "name": "0_metadata",
-            "report": "/tmp/tmp54d4gpya/anatMRIQC/ComputeIQMs/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/metadata/_report/report.rst",
-            "result": "/tmp/tmp54d4gpya/anatMRIQC/ComputeIQMs/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/metadata/result_metadata.pklz"
+            "report": "/tmp/tmpf9rk81t5/anatMRIQC/ComputeIQMs/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/metadata/_report/report.rst",
+            "result": "/tmp/tmpf9rk81t5/anatMRIQC/ComputeIQMs/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/metadata/result_metadata.pklz"
         },
         {
             "group": 1,
             "name": "1_conform",
-            "report": "/tmp/tmpi5n70wz3/anatMRIQC/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/conform/_report/report.rst",
-            "result": "/tmp/tmpi5n70wz3/anatMRIQC/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/conform/result_conform.pklz"
+            "report": "/tmp/tmp1kss50lz/anatMRIQC/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/conform/_report/report.rst",
+            "result": "/tmp/tmp1kss50lz/anatMRIQC/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/conform/result_conform.pklz"
         },
         {
             "group": 1,
             "name": "2_PlotMosaicNoise",
-            "report": "/tmp/tmpjptdgvd_/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/PlotMosaicNoise/_report/report.rst",
-            "result": "/tmp/tmpjptdgvd_/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/PlotMosaicNoise/result_PlotMosaicNoise.pklz"
+            "report": "/tmp/tmpr40a_gpw/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/PlotMosaicNoise/_report/report.rst",
+            "result": "/tmp/tmpr40a_gpw/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/PlotMosaicNoise/result_PlotMosaicNoise.pklz"
         },
         {
             "group": 1,
             "name": "3_RotationMask",
-            "report": "/tmp/tmpse9262ij/anatMRIQC/AirMaskWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/RotationMask/_report/report.rst",
-            "result": "/tmp/tmpse9262ij/anatMRIQC/AirMaskWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/RotationMask/result_RotationMask.pklz"
+            "report": "/tmp/tmp5pf1di24/anatMRIQC/AirMaskWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/RotationMask/_report/report.rst",
+            "result": "/tmp/tmp5pf1di24/anatMRIQC/AirMaskWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/RotationMask/result_RotationMask.pklz"
         },
         {
             "group": 1,
             "name": "4_asw",
-            "report": "/tmp/tmpsq0ywkw2/anatMRIQC/asw/_report/report.rst",
-            "result": "/tmp/tmpsq0ywkw2/anatMRIQC/asw/result_asw.pklz"
+            "report": "/tmp/tmp1rwrnplb/anatMRIQC/asw/_report/report.rst",
+            "result": "/tmp/tmp1rwrnplb/anatMRIQC/asw/result_asw.pklz"
         },
         {
             "group": 1,
             "name": "5_PlotBrainmask",
-            "report": "/tmp/tmpfyftv7_f/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/PlotBrainmask/_report/report.rst",
-            "result": "/tmp/tmpfyftv7_f/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/PlotBrainmask/result_PlotBrainmask.pklz"
+            "report": "/tmp/tmpaxiuumuy/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/PlotBrainmask/_report/report.rst",
+            "result": "/tmp/tmpaxiuumuy/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/PlotBrainmask/result_PlotBrainmask.pklz"
         },
         {
             "group": 1,
             "name": "6_PlotMosaicZoomed",
-            "report": "/tmp/tmpgzrmv0lo/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/PlotMosaicZoomed/_report/report.rst",
-            "result": "/tmp/tmpgzrmv0lo/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/PlotMosaicZoomed/result_PlotMosaicZoomed.pklz"
+            "report": "/tmp/tmpqbkj9sr_/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/PlotMosaicZoomed/_report/report.rst",
+            "result": "/tmp/tmpqbkj9sr_/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/PlotMosaicZoomed/result_PlotMosaicZoomed.pklz"
         },
         {
             "group": 1,
             "name": "7_smoothness",
-            "report": "/tmp/tmpkzuiw3bu/anatMRIQC/ComputeIQMs/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/smoothness/_report/report.rst",
-            "result": "/tmp/tmpkzuiw3bu/anatMRIQC/ComputeIQMs/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/smoothness/result_smoothness.pklz"
+            "report": "/tmp/tmpbi2djaw_/anatMRIQC/ComputeIQMs/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/smoothness/_report/report.rst",
+            "result": "/tmp/tmpbi2djaw_/anatMRIQC/ComputeIQMs/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/smoothness/result_smoothness.pklz"
         },
         {
             "group": 1,
             "name": "8_SpatialNormalization",
-            "report": "/tmp/tmp4bl_2k7v/anatMRIQC/SpatialNormalization/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/SpatialNormalization/_report/report.rst",
-            "result": "/tmp/tmp4bl_2k7v/anatMRIQC/SpatialNormalization/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/SpatialNormalization/result_SpatialNormalization.pklz"
+            "report": "/tmp/tmpdo57agjb/anatMRIQC/SpatialNormalization/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/SpatialNormalization/_report/report.rst",
+            "result": "/tmp/tmpdo57agjb/anatMRIQC/SpatialNormalization/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/SpatialNormalization/result_SpatialNormalization.pklz"
         },
         {
             "group": 1,
             "name": "9_MNItpms2t1",
-            "report": "/tmp/tmpnsbk_9_a/anatMRIQC/ComputeIQMs/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/MNItpms2t1/_report/report.rst",
-            "result": "/tmp/tmpnsbk_9_a/anatMRIQC/ComputeIQMs/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/MNItpms2t1/result_MNItpms2t1.pklz"
+            "report": "/tmp/tmpvr2j01e0/anatMRIQC/ComputeIQMs/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/MNItpms2t1/_report/report.rst",
+            "result": "/tmp/tmpvr2j01e0/anatMRIQC/ComputeIQMs/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/MNItpms2t1/result_MNItpms2t1.pklz"
         },
         {
             "group": 1,
             "name": "10_invert_xfm",
-            "report": "/tmp/tmpuzfe244l/anatMRIQC/AirMaskWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/invert_xfm/_report/report.rst",
-            "result": "/tmp/tmpuzfe244l/anatMRIQC/AirMaskWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/invert_xfm/result_invert_xfm.pklz"
+            "report": "/tmp/tmpgpvy_iav/anatMRIQC/AirMaskWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/invert_xfm/_report/report.rst",
+            "result": "/tmp/tmpgpvy_iav/anatMRIQC/AirMaskWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/invert_xfm/result_invert_xfm.pklz"
         },
         {
             "group": 1,
             "name": "11_segmentation",
-            "report": "/tmp/tmpq0iz5f2p/anatMRIQC/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/segmentation/_report/report.rst",
-            "result": "/tmp/tmpq0iz5f2p/anatMRIQC/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/segmentation/result_segmentation.pklz"
+            "report": "/tmp/tmp635lrlve/anatMRIQC/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/segmentation/_report/report.rst",
+            "result": "/tmp/tmp635lrlve/anatMRIQC/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/segmentation/result_segmentation.pklz"
         },
         {
             "group": 1,
             "name": "12_PlotSegmentation",
-            "report": "/tmp/tmpb9m2ivuq/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/PlotSegmentation/_report/report.rst",
-            "result": "/tmp/tmpb9m2ivuq/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/PlotSegmentation/result_PlotSegmentation.pklz"
+            "report": "/tmp/tmplyb0ycc0/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/PlotSegmentation/_report/report.rst",
+            "result": "/tmp/tmplyb0ycc0/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/PlotSegmentation/result_PlotSegmentation.pklz"
         },
         {
             "group": 1,
             "name": "13_harmonize",
-            "report": "/tmp/tmphn3fd3qn/anatMRIQC/ComputeIQMs/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/harmonize/_report/report.rst",
-            "result": "/tmp/tmphn3fd3qn/anatMRIQC/ComputeIQMs/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/harmonize/result_harmonize.pklz"
+            "report": "/tmp/tmpen7c1iu1/anatMRIQC/ComputeIQMs/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/harmonize/_report/report.rst",
+            "result": "/tmp/tmpen7c1iu1/anatMRIQC/ComputeIQMs/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/harmonize/result_harmonize.pklz"
         },
         {
             "group": 1,
             "name": "14_EstimateSNR",
-            "report": "/tmp/tmp_b4bgpvr/anatMRIQC/HeadMaskWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/EstimateSNR/_report/report.rst",
-            "result": "/tmp/tmp_b4bgpvr/anatMRIQC/HeadMaskWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/EstimateSNR/result_EstimateSNR.pklz"
+            "report": "/tmp/tmprdzch5t8/anatMRIQC/HeadMaskWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/EstimateSNR/_report/report.rst",
+            "result": "/tmp/tmprdzch5t8/anatMRIQC/HeadMaskWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/EstimateSNR/result_EstimateSNR.pklz"
         },
         {
             "group": 1,
             "name": "15_Enhance",
-            "report": "/tmp/tmpj8tlix6b/anatMRIQC/HeadMaskWorkflow/Enhance/_report/report.rst",
-            "result": "/tmp/tmpj8tlix6b/anatMRIQC/HeadMaskWorkflow/Enhance/result_Enhance.pklz"
+            "report": "/tmp/tmpr1kubytn/anatMRIQC/HeadMaskWorkflow/Enhance/_report/report.rst",
+            "result": "/tmp/tmpr1kubytn/anatMRIQC/HeadMaskWorkflow/Enhance/result_Enhance.pklz"
         },
         {
             "group": 1,
             "name": "16_Denoise",
-            "report": "/tmp/tmpd77lhbmp/anatMRIQC/HeadMaskWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/Denoise/_report/report.rst",
-            "result": "/tmp/tmpd77lhbmp/anatMRIQC/HeadMaskWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/Denoise/result_Denoise.pklz"
+            "report": "/tmp/tmpeb2uk30r/anatMRIQC/HeadMaskWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/Denoise/_report/report.rst",
+            "result": "/tmp/tmpeb2uk30r/anatMRIQC/HeadMaskWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/Denoise/result_Denoise.pklz"
         },
         {
             "group": 1,
             "name": "17_Grad",
-            "report": "/tmp/tmptq32c7g5/anatMRIQC/HeadMaskWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/Grad/_report/report.rst",
-            "result": "/tmp/tmptq32c7g5/anatMRIQC/HeadMaskWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/Grad/result_Grad.pklz"
+            "report": "/tmp/tmprt0zzk4y/anatMRIQC/HeadMaskWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/Grad/_report/report.rst",
+            "result": "/tmp/tmprt0zzk4y/anatMRIQC/HeadMaskWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/Grad/result_Grad.pklz"
         },
         {
             "group": 1,
             "name": "18_GradientThreshold",
-            "report": "/tmp/tmpvmkzqsg0/anatMRIQC/HeadMaskWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/GradientThreshold/_report/report.rst",
-            "result": "/tmp/tmpvmkzqsg0/anatMRIQC/HeadMaskWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/GradientThreshold/result_GradientThreshold.pklz"
+            "report": "/tmp/tmpro3_cz8f/anatMRIQC/HeadMaskWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/GradientThreshold/_report/report.rst",
+            "result": "/tmp/tmpro3_cz8f/anatMRIQC/HeadMaskWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/GradientThreshold/result_GradientThreshold.pklz"
         },
         {
             "group": 1,
             "name": "19_PlotHeadmask",
-            "report": "/tmp/tmpewvs_pqk/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/PlotHeadmask/_report/report.rst",
-            "result": "/tmp/tmpewvs_pqk/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/PlotHeadmask/result_PlotHeadmask.pklz"
+            "report": "/tmp/tmpyh6lhj9k/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/PlotHeadmask/_report/report.rst",
+            "result": "/tmp/tmpyh6lhj9k/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/PlotHeadmask/result_PlotHeadmask.pklz"
         },
         {
             "group": 1,
             "name": "20_ArtifactMask",
-            "report": "/tmp/tmp8ubcs3em/anatMRIQC/AirMaskWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/ArtifactMask/_report/report.rst",
-            "result": "/tmp/tmp8ubcs3em/anatMRIQC/AirMaskWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/ArtifactMask/result_ArtifactMask.pklz"
+            "report": "/tmp/tmp15foi0kl/anatMRIQC/AirMaskWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/ArtifactMask/_report/report.rst",
+            "result": "/tmp/tmp15foi0kl/anatMRIQC/AirMaskWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/ArtifactMask/result_ArtifactMask.pklz"
         },
         {
             "group": 1,
             "name": "21_PlotArtmask",
-            "report": "/tmp/tmp6aohchrv/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/PlotArtmask/_report/report.rst",
-            "result": "/tmp/tmp6aohchrv/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/PlotArtmask/result_PlotArtmask.pklz"
+            "report": "/tmp/tmpxj92n991/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/PlotArtmask/_report/report.rst",
+            "result": "/tmp/tmpxj92n991/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/PlotArtmask/result_PlotArtmask.pklz"
         },
         {
             "group": 1,
             "name": "22_PlotAirmask",
-            "report": "/tmp/tmpl1bskqxg/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/PlotAirmask/_report/report.rst",
-            "result": "/tmp/tmpl1bskqxg/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/PlotAirmask/result_PlotAirmask.pklz"
+            "report": "/tmp/tmppfv9o18l/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/PlotAirmask/_report/report.rst",
+            "result": "/tmp/tmppfv9o18l/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/PlotAirmask/result_PlotAirmask.pklz"
         },
         {
             "group": 1,
             "name": "23_ComputeQI2",
-            "report": "/tmp/tmpzm3hw8sr/anatMRIQC/ComputeIQMs/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/ComputeQI2/_report/report.rst",
-            "result": "/tmp/tmpzm3hw8sr/anatMRIQC/ComputeIQMs/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/ComputeQI2/result_ComputeQI2.pklz"
+            "report": "/tmp/tmp55r00xoo/anatMRIQC/ComputeIQMs/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/ComputeQI2/_report/report.rst",
+            "result": "/tmp/tmp55r00xoo/anatMRIQC/ComputeIQMs/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/ComputeQI2/result_ComputeQI2.pklz"
         },
         {
             "group": 1,
             "name": "24_MergePlots",
-            "report": "/tmp/tmpkpmx1k21/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/MergePlots/_report/report.rst",
-            "result": "/tmp/tmpkpmx1k21/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/MergePlots/result_MergePlots.pklz"
+            "report": "/tmp/tmp6hmtemjv/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/MergePlots/_report/report.rst",
+            "result": "/tmp/tmp6hmtemjv/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/MergePlots/result_MergePlots.pklz"
         },
         {
             "group": 1,
             "name": "25_measures",
-            "report": "/tmp/tmpqge0u20v/anatMRIQC/ComputeIQMs/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/measures/_report/report.rst",
-            "result": "/tmp/tmpqge0u20v/anatMRIQC/ComputeIQMs/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/measures/result_measures.pklz"
+            "report": "/tmp/tmpwnla24s4/anatMRIQC/ComputeIQMs/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/measures/_report/report.rst",
+            "result": "/tmp/tmpwnla24s4/anatMRIQC/ComputeIQMs/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/measures/result_measures.pklz"
         },
         {
             "group": 1,
             "name": "26_provenance",
-            "report": "/tmp/tmpy36ptj36/anatMRIQC/ComputeIQMs/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/provenance/_report/report.rst",
-            "result": "/tmp/tmpy36ptj36/anatMRIQC/ComputeIQMs/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/provenance/result_provenance.pklz"
+            "report": "/tmp/tmpmr1bzhgo/anatMRIQC/ComputeIQMs/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/provenance/_report/report.rst",
+            "result": "/tmp/tmpmr1bzhgo/anatMRIQC/ComputeIQMs/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/provenance/result_provenance.pklz"
         },
         {
             "group": 1,
             "name": "27_datasink",
-            "report": "/tmp/tmpiaw7l5l0/anatMRIQC/ComputeIQMs/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/datasink/_report/report.rst",
-            "result": "/tmp/tmpiaw7l5l0/anatMRIQC/ComputeIQMs/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/datasink/result_datasink.pklz"
+            "report": "/tmp/tmp67vdweni/anatMRIQC/ComputeIQMs/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/datasink/_report/report.rst",
+            "result": "/tmp/tmp67vdweni/anatMRIQC/ComputeIQMs/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/datasink/result_datasink.pklz"
         },
         {
             "group": 1,
             "name": "28_GenerateReport",
-            "report": "/tmp/tmp_yaouyqg/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/GenerateReport/_report/report.rst",
-            "result": "/tmp/tmp_yaouyqg/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/GenerateReport/result_GenerateReport.pklz"
+            "report": "/tmp/tmptkzjoan1/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/GenerateReport/_report/report.rst",
+            "result": "/tmp/tmptkzjoan1/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/GenerateReport/result_GenerateReport.pklz"
         },
         {
             "group": 1,
             "name": "29_dsplots",
-            "report": "/tmp/tmpfb2y6lzb/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/dsplots/_report/report.rst",
-            "result": "/tmp/tmpfb2y6lzb/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/dsplots/result_dsplots.pklz"
+            "report": "/tmp/tmpl56o06ts/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/dsplots/_report/report.rst",
+            "result": "/tmp/tmpl56o06ts/anatMRIQC/ReportsWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/dsplots/result_dsplots.pklz"
         },
         {
             "group": 1,
             "name": "30_UploadMetrics",
-            "report": "/tmp/tmpyxakt1us/anatMRIQC/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/UploadMetrics/_report/report.rst",
-            "result": "/tmp/tmpyxakt1us/anatMRIQC/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/UploadMetrics/result_UploadMetrics.pklz"
+            "report": "/tmp/tmp0yl1e2ub/anatMRIQC/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/UploadMetrics/_report/report.rst",
+            "result": "/tmp/tmp0yl1e2ub/anatMRIQC/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-002..anat..sub-002_T1w.nii.gz/UploadMetrics/result_UploadMetrics.pklz"
         }
     ]
 }

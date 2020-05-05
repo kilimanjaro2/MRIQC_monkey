@@ -117,7 +117,6 @@ Building anatomical MRIQC workflow for files: {', '.join(dataset)}.""")
         (inputnode, iqmswf, [('in_file', 'inputnode.in_file')]),
         (inputnode, norm, [(('in_file', _get_mod), 'inputnode.modality')]),
         (inputnode, segment, [(('in_file', _get_imgtype), 'img_type')]),
-        #(to_ras, asw, [('out_file', 'inputnode.in_file')]),
         (asw, segment, [('out_file', 'in_files')]),
         (asw, hmsk, [('bias_corrected', 'inputnode.in_file')]),
         (segment, hmsk, [('tissue_class_map', 'inputnode.in_segm')]),
@@ -145,7 +144,6 @@ Building anatomical MRIQC workflow for files: {', '.join(dataset)}.""")
         (hmsk, iqmswf, [('outputnode.out_file', 'inputnode.headmask')]),
         (to_ras, repwf, [('out_file', 'inputnode.in_ras')]),
         (asw, repwf, [('bias_corrected', 'inputnode.inu_corrected'),
-        #              ('bias_image', 'inputnode.in_inu'),
                       ('out_mask', 'inputnode.brainmask')]),
         (hmsk, repwf, [('outputnode.out_file', 'inputnode.headmask')]),
         (amw, repwf, [('outputnode.air_mask', 'inputnode.airmask'),
@@ -396,9 +394,6 @@ def individual_reports(name='ReportsWorkflow'):
     plot_artmask = pe.Node(PlotContours(
         display_mode='z', levels=[.5], colors=['r'], cut_coords=10,
         out_file='artmask', saturate=True), name='PlotArtmask')
-    #plot_inu = pe.Node(PlotContours(
-    #    display_mode='z', levels=[.5], colors=['r'], cut_coords=10,
-    #    out_file='out_inu', saturate=True), name='PlotINU')
 
     workflow.connect([
         (inputnode, plot_segm, [('in_ras', 'in_file'),
@@ -411,8 +406,6 @@ def individual_reports(name='ReportsWorkflow'):
                                    ('airmask', 'in_contours')]),
         (inputnode, plot_artmask, [('in_ras', 'in_file'),
                                    ('artmask', 'in_contours')]),
-        #(inputnode, plot_inu, [('in_ras', 'in_file'),
-        #                           ('in_inu', 'in_contours')]),
         (inputnode, mplots, [('mni_report', f"in{pages + 1}")]),
         (plot_bmask, mplots, [('out_file', f'in{pages + 2}')]),
         (plot_segm, mplots, [('out_file', f'in{pages + 3}')]),
@@ -420,7 +413,6 @@ def individual_reports(name='ReportsWorkflow'):
         (plot_headmask, mplots, [('out_file', f'in{pages + 5}')]),
         (plot_airmask, mplots, [('out_file', f'in{pages + 6}')]),
         (inputnode, mplots, [('noisefit', f'in{pages + 7}')]),
-        #(plot_inu, mplots, [('out_file', f'in{pages + 8}')]),
     ])
     return workflow
 
