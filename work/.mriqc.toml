@@ -1,0 +1,59 @@
+[environment]
+cpu_count = 8
+exec_env = "posix"
+overcommit_policy = "heuristic"
+overcommit_limit = "50%"
+nipype_version = "1.4.2"
+templateflow_version = "0.5.2"
+version = "0+untagged.2628.g289cee2.dirty"
+
+[execution]
+ants_float = false
+bids_dir = "/home/kilimanjaro2/Research/monkeyStuff/mriqc/../bidsData"
+debug = false
+dry_run = false
+dsname = "<unset>"
+float32 = true
+layout = "BIDS Layout: .../Research/monkeyStuff/bidsData | Subjects: 60 | Sessions: 0 | Runs: 0"
+log_dir = "/home/kilimanjaro2/Research/monkeyStuff/derivatives/badMonkey/logs"
+log_level = 25
+no_sub = false
+output_dir = "/home/kilimanjaro2/Research/monkeyStuff/derivatives/badMonkey"
+participant_label = [ "001", "002", "003", "004", "005", "006", "007", "008", "009", "010", "011", "012", "013", "014", "015", "016", "017", "018", "019", "020", "021", "022", "023", "024", "025", "026", "027", "028", "029", "030", "031", "032", "033", "034", "035", "036", "037", "038", "039", "040", "041", "042", "043", "044", "045", "046", "047", "048", "049", "050", "051", "052", "053", "054", "055", "056", "057", "058", "059", "060",]
+reports_only = false
+run_uuid = "20200511-185814_ead08177-c476-4552-9591-d9f96c16216f"
+templateflow_home = "/home/kilimanjaro2/.cache/templateflow"
+upload_strict = false
+verbose_reports = false
+webapi_url = "https://mriqc.nimh.nih.gov/api/v1"
+work_dir = "/home/kilimanjaro2/Research/monkeyStuff/mriqc/work"
+write_graph = false
+
+[workflow]
+analysis_level = [ "group",]
+biggest_file_gb = 0.01992168463766575
+correct_slice_timing = false
+deoblique = false
+despike = false
+fd_thres = 0.2
+fd_radius = 50
+fft_spikes_detector = false
+headmask = "BET"
+ica = false
+template_id = "MNI152NLin2009cAsym"
+
+[nipype]
+crashfile_format = "txt"
+get_linked_libs = false
+nprocs = 8
+omp_nthreads = 8
+plugin = "MultiProc"
+resource_monitor = false
+stop_on_first_crash = true
+
+[workflow.inputs]
+T1w = [ "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-001/anat/sub-001_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-002/anat/sub-002_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-003/anat/sub-003_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-004/anat/sub-004_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-005/anat/sub-005_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-006/anat/sub-006_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-007/anat/sub-007_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-008/anat/sub-008_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-009/anat/sub-009_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-010/anat/sub-010_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-011/anat/sub-011_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-012/anat/sub-012_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-013/anat/sub-013_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-014/anat/sub-014_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-015/anat/sub-015_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-016/anat/sub-016_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-017/anat/sub-017_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-018/anat/sub-018_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-019/anat/sub-019_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-020/anat/sub-020_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-021/anat/sub-021_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-022/anat/sub-022_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-023/anat/sub-023_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-024/anat/sub-024_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-025/anat/sub-025_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-026/anat/sub-026_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-027/anat/sub-027_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-028/anat/sub-028_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-029/anat/sub-029_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-030/anat/sub-030_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-031/anat/sub-031_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-032/anat/sub-032_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-033/anat/sub-033_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-034/anat/sub-034_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-035/anat/sub-035_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-036/anat/sub-036_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-037/anat/sub-037_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-038/anat/sub-038_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-039/anat/sub-039_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-040/anat/sub-040_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-041/anat/sub-041_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-042/anat/sub-042_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-043/anat/sub-043_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-044/anat/sub-044_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-045/anat/sub-045_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-046/anat/sub-046_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-047/anat/sub-047_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-048/anat/sub-048_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-049/anat/sub-049_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-050/anat/sub-050_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-051/anat/sub-051_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-052/anat/sub-052_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-053/anat/sub-053_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-054/anat/sub-054_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-055/anat/sub-055_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-056/anat/sub-056_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-057/anat/sub-057_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-058/anat/sub-058_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-059/anat/sub-059_T1w.nii.gz", "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-060/anat/sub-060_T1w.nii.gz",]
+
+[nipype.plugin_args]
+maxtasksperchild = 1
+raise_insufficient = false

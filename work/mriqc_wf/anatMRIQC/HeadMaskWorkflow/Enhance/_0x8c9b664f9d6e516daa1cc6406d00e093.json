@@ -1,0 +1,19 @@
+[
+    [
+        "function_str",
+        "def _enhance(in_file, out_file=None):\n    import os.path as op\n    import numpy as np\n    import nibabel as nb\n\n    if out_file is None:\n        fname, ext = op.splitext(op.basename(in_file))\n        if ext == '.gz':\n            fname, ext2 = op.splitext(fname)\n            ext = ext2 + ext\n        out_file = op.abspath(f'{fname}_enhanced{ext}')\n\n    imnii = nb.load(in_file)\n    data = imnii.get_data().astype(np.float32)  # pylint: disable=no-member\n    range_max = np.percentile(data[data > 0], 99.98)\n    range_min = np.median(data[data > 0])\n\n    # Resample signal excess pixels\n    excess = np.where(data > range_max)\n    data[excess] = 0\n    data[excess] = np.random.choice(data[data > range_min], size=len(excess[0]))\n\n    nb.Nifti1Image(data, imnii.affine, imnii.header).to_filename(\n        out_file)\n\n    return out_file\n"
+    ],
+    [
+        "in_file",
+        [
+            "/home/kilimanjaro2/Research/monkeyStuff/secondN4/sub-001/bias_corrected.nii.gz",
+            "0fe4a820f803ac242f8d8d7cafb72c12"
+        ]
+    ],
+    [
+        "needed_outputs",
+        [
+            "out_file"
+        ]
+    ]
+]

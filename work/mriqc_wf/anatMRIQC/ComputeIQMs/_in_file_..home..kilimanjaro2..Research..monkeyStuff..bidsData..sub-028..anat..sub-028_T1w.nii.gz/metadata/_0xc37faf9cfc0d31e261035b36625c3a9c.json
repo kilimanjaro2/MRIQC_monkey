@@ -1,0 +1,29 @@
+[
+    [
+        "bids_dir",
+        null
+    ],
+    [
+        "bids_validate",
+        true
+    ],
+    [
+        "in_file",
+        [
+            "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-028/anat/sub-028_T1w.nii.gz",
+            "aabdfddb9f932ee482a5d56f926a4c3d"
+        ]
+    ],
+    [
+        "needed_outputs",
+        [
+            "acquisition",
+            "out_dict",
+            "reconstruction",
+            "run",
+            "session",
+            "subject",
+            "task"
+        ]
+    ]
+]

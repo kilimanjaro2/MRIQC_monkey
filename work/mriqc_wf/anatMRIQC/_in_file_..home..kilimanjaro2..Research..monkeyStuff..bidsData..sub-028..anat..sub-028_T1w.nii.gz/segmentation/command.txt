@@ -1,0 +1,2 @@
+fast -t 1 -o segment -g -S 1 /home/kilimanjaro2/Research/monkeyStuff/mriqc/work/mriqc_wf/anatMRIQC/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-028..anat..sub-028_T1w.nii.gz/segmentation/out_file.nii.gz
+

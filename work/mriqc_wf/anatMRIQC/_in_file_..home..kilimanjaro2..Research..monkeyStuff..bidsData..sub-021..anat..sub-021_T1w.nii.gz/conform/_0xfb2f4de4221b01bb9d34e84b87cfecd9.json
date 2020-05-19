@@ -1,0 +1,23 @@
+[
+    [
+        "check_dtype",
+        false
+    ],
+    [
+        "check_ras",
+        true
+    ],
+    [
+        "in_file",
+        [
+            "/home/kilimanjaro2/Research/monkeyStuff/bidsData/sub-021/anat/sub-021_T1w.nii.gz",
+            "435b6d92644aac4abdb3477358cd422a"
+        ]
+    ],
+    [
+        "needed_outputs",
+        [
+            "out_file"
+        ]
+    ]
+]

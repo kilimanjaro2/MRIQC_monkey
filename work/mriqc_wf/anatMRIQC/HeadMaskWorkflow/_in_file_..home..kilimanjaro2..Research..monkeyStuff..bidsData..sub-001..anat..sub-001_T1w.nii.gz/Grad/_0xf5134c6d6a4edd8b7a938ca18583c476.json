@@ -1,0 +1,23 @@
+[
+    [
+        "function_str",
+        "def image_gradient(in_file, snr, out_file=None):\n    \"\"\"Computes the magnitude gradient of an image using numpy\"\"\"\n    import os.path as op\n    import numpy as np\n    import nibabel as nb\n    from scipy.ndimage import gaussian_gradient_magnitude as gradient\n\n    if out_file is None:\n        fname, ext = op.splitext(op.basename(in_file))\n        if ext == '.gz':\n            fname, ext2 = op.splitext(fname)\n            ext = ext2 + ext\n        out_file = op.abspath(f'{fname}_grad{ext}')\n\n    imnii = nb.load(in_file)\n    data = imnii.get_data().astype(np.float32)  # pylint: disable=no-member\n    datamax = np.percentile(data.reshape(-1), 99.5)\n    data *= 100 / datamax\n    grad = gradient(data, 3.0)\n    gradmax = np.percentile(grad.reshape(-1), 99.5)\n    grad *= 100.\n    grad /= gradmax\n\n    nb.Nifti1Image(grad, imnii.affine, imnii.header).to_filename(out_file)\n    return out_file\n"
+    ],
+    [
+        "in_file",
+        [
+            "/home/kilimanjaro2/Research/monkeyStuff/mriqc/work/mriqc_wf/anatMRIQC/HeadMaskWorkflow/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-001..anat..sub-001_T1w.nii.gz/Denoise/bias_corrected_enhanced_denoise.nii.gz",
+            "be6a3fcefb12a5778727b55e0f3acae9"
+        ]
+    ],
+    [
+        "snr",
+        "8.5585288450"
+    ],
+    [
+        "needed_outputs",
+        [
+            "out_file"
+        ]
+    ]
+]

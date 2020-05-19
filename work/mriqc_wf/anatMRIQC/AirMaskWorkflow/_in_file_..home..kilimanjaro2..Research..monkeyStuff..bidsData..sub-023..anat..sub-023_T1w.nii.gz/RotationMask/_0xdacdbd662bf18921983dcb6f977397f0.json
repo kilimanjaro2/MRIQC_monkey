@@ -1,0 +1,15 @@
+[
+    [
+        "in_file",
+        [
+            "/home/kilimanjaro2/Research/monkeyStuff/mriqc/work/mriqc_wf/anatMRIQC/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-023..anat..sub-023_T1w.nii.gz/conform/sub-023_T1w_conformed.nii.gz",
+            "e4b3f91b1200c31931c16e99aba6ee0d"
+        ]
+    ],
+    [
+        "needed_outputs",
+        [
+            "out_file"
+        ]
+    ]
+]

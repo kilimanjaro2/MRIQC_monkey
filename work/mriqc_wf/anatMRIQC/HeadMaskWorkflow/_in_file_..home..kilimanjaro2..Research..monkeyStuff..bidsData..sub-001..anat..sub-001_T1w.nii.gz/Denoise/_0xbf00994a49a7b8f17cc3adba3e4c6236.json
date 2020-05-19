@@ -1,0 +1,31 @@
+[
+    [
+        "block_radius",
+        5
+    ],
+    [
+        "in_file",
+        [
+            "/home/kilimanjaro2/Research/monkeyStuff/mriqc/work/mriqc_wf/anatMRIQC/HeadMaskWorkflow/Enhance/bias_corrected_enhanced.nii.gz",
+            "0a14be1d83a970696c5cafc54b9c180b"
+        ]
+    ],
+    [
+        "noise_model",
+        "rician"
+    ],
+    [
+        "patch_radius",
+        1
+    ],
+    [
+        "snr",
+        "8.5585288450"
+    ],
+    [
+        "needed_outputs",
+        [
+            "out_file"
+        ]
+    ]
+]

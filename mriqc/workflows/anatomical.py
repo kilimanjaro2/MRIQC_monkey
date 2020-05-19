@@ -52,6 +52,7 @@ templatedir = '/home/kilimanjaro2/Research/monkeyStuff/templates/'      #####
 
 
 def anat_qc_workflow(dataset, name='anatMRIQC'):
+#def anat_qc_workflow( name='anatMRIQC'):
     """
     One-subject-one-session-one-run pipeline to extract the NR-IQMs from
     anatomical images
@@ -513,7 +514,8 @@ def airmsk_wf(name='AirMaskWorkflow'):
     invt = pe.Node(ants.ApplyTransforms(
         dimension=3, default_value=0, interpolation='MultiLabel', float=True),
         name='invert_xfm')
-    invt.inputs.input_image = str(templatedir + 'head_mask_template.nii.gz')
+    invt.inputs.input_image = str(templatedir + '01052020.nii.gz')
+
 
     qi1 = pe.Node(ArtifactMask(), name='ArtifactMask')
 
