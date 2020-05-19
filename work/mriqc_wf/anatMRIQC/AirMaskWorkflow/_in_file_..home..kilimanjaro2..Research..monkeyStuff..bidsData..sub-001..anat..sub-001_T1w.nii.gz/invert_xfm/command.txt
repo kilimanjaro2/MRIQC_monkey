@@ -1,2 +1,0 @@
-antsApplyTransforms --default-value 0 --dimensionality 3 --float 1 --input /home/kilimanjaro2/Research/monkeyStuff/templates/head_mask_template.nii.gz --interpolation MultiLabel --output head_mask_template_trans.nii.gz --reference-image /home/kilimanjaro2/Research/monkeyStuff/secondN4/sub-001/out_mask.nii.gz --transform /home/kilimanjaro2/Research/monkeyStuff/mriqc/work/mriqc_wf/anatMRIQC/SpatialNormalization/_in_file_..home..kilimanjaro2..Research..monkeyStuff..bidsData..sub-001..anat..sub-001_T1w.nii.gz/SpatialNormalization/ants_t1_to_mniInverseComposite.h5
-
